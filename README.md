@@ -10,8 +10,8 @@ Files of the Project:
     2. Sql queryies are imported from the python file sql_queries.py 
 - sql_queries.py : This python sql drops the table if already present in the database, creates new tables and inserts the records.
 - etl.ipynb : 
-    1. This interactive jupter notebook file helps to execute the ETL file step by step to process a single record from the song and log files.
-    2. After processing the files successfully, the single record is inserted into the respective tables. 
+    1. This interactive jupter notebook file helps to execute the ETL process step by step to process a single record from the song and log files.
+    2. After processing the first few records successfully, data is inserted into the respective tables. 
 - etl.py : 
     1. After successfully processing, and inserting the single record, this ETL python file is executed via the terminal and entire file is processed. 
 - test.ipynb : 
