@@ -9,13 +9,22 @@ A startup company named "Sparkify" wants to analyse on the data collected in the
 ETL Process:
 ETL means Extract, Transform and load. The data is extracted from the song and log files in JSON File format, transformed into a two dimensional datastructure using pandas dataframe and then data loaded in star schema datamart i.e the single fact table and multiple dimension table around the fact table.
 
+Star Database Schema:
 Tables:
-- Fact table ( Songplays)
 - Dimension Tables:
-- -> users (log file)
-- -> song (song file)
-- -> artists (song file)
-- -> time (log file)
+  -> Table users 
+        - Extracted the columns user_id(primary key),first_name,last_name,gender,level from "log file"
+  -> song 
+        - Extracted the columns song_id(primary key),title,artist_id,year,duration from "song file"
+  -> artists
+        - Extracted the columns artist_id(primary key),name,location,latitude,longtitude from "song file"
+  -> time 
+        - Extracted the columns start_time(primary key),hour,day,week,month,year,weekday from "log file"
+
+- Fact table 
+  -> Songplays
+        - 
+
 
 Files of the Project:
 
