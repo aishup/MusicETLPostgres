@@ -1,7 +1,3 @@
-Improve the Introduction with the purpose of the project, what is Sparkify, how the ETL is going to work.
-Add the Database schema design with the tables and the columns
-Add a section on how to run the Python scripts
-
 Project Summary:
 
 A startup company named "Sparkify" wants to analyse on the data collected in their music streaming app. They want to analyse the user activity and the songs listened by the users.As data engineers, this project is implemented by Data Modelling using Postgres and ETL Pipeline build using python.
