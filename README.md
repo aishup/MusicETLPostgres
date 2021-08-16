@@ -1,7 +1,21 @@
+Improve the Introduction with the purpose of the project, what is Sparkify, how the ETL is going to work.
+Add the Database schema design with the tables and the columns
+Add a section on how to run the Python scripts
 
 Project Summary:
 
-This project is an example on how to implement Data Modelling wih Postgres and build an ETL Pipeline using python. Data is extracted from the JSON File format , transformed into a two dimensional datastructure using pandas dataframe and then ,loaded into the fact and dimension tables in the star schema. 
+A startup company named "Sparkify" wants to analyse on the data collected in their music streaming app. They want to analyse the user activity and the songs listened by the users.As data engineers, this project is implemented by Data Modelling using Postgres and ETL Pipeline build using python.
+
+ETL Process:
+ETL means Extract, Transform and load. The data is extracted from the song and log files in JSON File format, transformed into a two dimensional datastructure using pandas dataframe and then data loaded in star schema datamart i.e the single fact table and multiple dimension table around the fact table.
+
+Tables:
+- Fact table ( Songplays)
+- Dimension Tables:
+- -> users (log file)
+- -> song (song file)
+- -> artists (song file)
+- -> time (log file)
 
 Files of the Project:
 
