@@ -12,17 +12,17 @@ ETL means Extract, Transform and load. The data is extracted from the song and l
 Star Database Schema:
 Tables:
 - Dimension Tables:
-  -> Table users 
+  1. Table users 
         - Extracted the columns user_id(primary key),first_name,last_name,gender,level from "log file"
-  -> song 
+  2. song 
         - Extracted the columns song_id(primary key),title,artist_id,year,duration from "song file"
-  -> artists
+  3. artists
         - Extracted the columns artist_id(primary key),name,location,latitude,longtitude from "song file"
-  -> time 
+  4. time 
         - Extracted the columns start_time(primary key),hour,day,week,month,year,weekday from "log file"
 
 - Fact table 
-  -> Songplays
+  5. Songplays
         - Extracted the song play_id,user_id,level,session_id,location,user_agent from "log file" for the rows having "Next Song"
         - Extracted song_id,artist_id from song ,artists table respectively based on the title, artist name, and duration of a song.
         - Extracted the start_time from time table
@@ -33,15 +33,15 @@ Execution of Python Scripts:
   
 Files of the Project:
 
-- create_tables.py : This python script file performs the below functions:
+1. create_tables.py : This python script file performs the below functions:
     1. Calls the local functions 'Drop' and 'Create' which will run the sql queries to drop and create new fact table(songplays) and dimension tables(time,users,songs,artists). 
     2. Sql queryies are imported from the python file sql_queries.py 
-- sql_queries.py : This python sql drops the table if already present in the database, creates new tables and inserts the records.
-- etl.ipynb : 
+2. sql_queries.py : This python sql drops the table if already present in the database, creates new tables and inserts the records.
+3. etl.ipynb : 
     1. This interactive jupter notebook file helps to execute the ETL process step by step to process a single record from the song and log files.
     2. After processing the first few records successfully, data is inserted into the respective tables. 
-- etl.py : 
+4. etl.py : 
     1. After successfully processing, and inserting the single record, this ETL python file is executed via the terminal and entire file is processed. 
-- test.ipynb : 
+5. test.ipynb : 
     1. This interactive python file run the select sql sequeries to check if the values are inserted into the db successfully.
 
