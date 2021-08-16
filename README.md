@@ -2,14 +2,14 @@ Improve the Introduction with the purpose of the project, what is Sparkify, how 
 Add the Database schema design with the tables and the columns
 Add a section on how to run the Python scripts
 
-<<<Project Summary:>>>
+Project Summary:
 
 A startup company named "Sparkify" wants to analyse on the data collected in their music streaming app. They want to analyse the user activity and the songs listened by the users.As data engineers, this project is implemented by Data Modelling using Postgres and ETL Pipeline build using python.
 
 ETL Process:
 ETL means Extract, Transform and load. The data is extracted from the song and log files in JSON File format, transformed into a two dimensional datastructure using pandas dataframe and then data loaded in star schema datamart i.e the single fact table and multiple dimension table around the fact table.
 
-<<<Star Database Schema:>>>
+Star Database Schema:
 Tables:
 - Dimension Tables:
   -> Table users 
@@ -31,7 +31,7 @@ Tables:
 Execution of Python Scripts:
   1. Using the command "Python3 create_tables.py" is run the python files.  
   
-<<<Files of the Project:>>>
+Files of the Project:
 
 - create_tables.py : This python script file performs the below functions:
     1. Calls the local functions 'Drop' and 'Create' which will run the sql queries to drop and create new fact table(songplays) and dimension tables(time,users,songs,artists). 
