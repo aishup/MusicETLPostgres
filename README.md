@@ -22,7 +22,7 @@ Tables:
         - Extracted the columns start_time(primary key),hour,day,week,month,year,weekday from "log file"
 
 - Fact table 
-  5. Songplays
+  1. Songplays
         - Extracted the song play_id,user_id,level,session_id,location,user_agent from "log file" for the rows having "Next Song"
         - Extracted song_id,artist_id from song ,artists table respectively based on the title, artist name, and duration of a song.
         - Extracted the start_time from time table
